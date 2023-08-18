@@ -2,7 +2,8 @@
 
 const express = required('express');
 const app = express();
-const ConnectDB = require('./db/dbConnect')
+const ConnectDB = require('./db/connect')
+require('dotenv').config()
 
 
 app.use(express.static('./public'))
