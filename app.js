@@ -16,8 +16,8 @@ const port = 5000
 
 const server =  async () => {
     try{
-        await ConnectDB('mongodb+srv://adetorodev:tU6eZDqRP3w8Gjiz@cluster0.p3y5v9l.mongodb.net/taskapp')
-        console.log("Connected to DB")
+        // await ConnectDB('mongodb+srv://adetorodev:w2GjK1xAFlryi6uc@cluster0.p3y5v9l.mongodb.net/TaskApp?retryWrites=true&w=majority')
+        // console.log("Connected to DB")
         app.listen(port, () => console.log(`Server listening on port ${port}`))
     } catch(err){
         console.log(err)
